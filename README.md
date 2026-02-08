@@ -34,7 +34,7 @@ This project is for **learning purposes**, focusing on CRUD operations, entity r
 
 ---
 
-## 🧩 Entities
+##  Entities
 
 ### Employee
 - id
@@ -60,7 +60,7 @@ This project is for **learning purposes**, focusing on CRUD operations, entity r
 
 ---
 
-## 🔐 Security
+##  Security
 
 - Spring Security configured using `SecurityFilterChain`
 - CSRF & CORS disabled (for development)
@@ -69,7 +69,7 @@ This project is for **learning purposes**, focusing on CRUD operations, entity r
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Database (application.properties)
 
