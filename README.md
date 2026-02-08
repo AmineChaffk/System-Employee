@@ -14,9 +14,8 @@ Features
   - Approve / Reject Leave
 - Role-based logic (ADMIN / EMPLOYEE – basic)
 
----
 
-🛠 Technologies Used
+Technologies Used
 
 - Java
 - Spring Boot
@@ -25,14 +24,15 @@ Features
 - Maven
 - Hibernate
 
----
 
-## 🗄 Database Design
 
-### Entities
-- **Employee**
-- **Department**
-- **Leave**
+Database Design
+
+Entities
+- Employee
+- Department
+- Leave
+- login
 
 Relationships
 - Employee ➝ Department (ManyToOne)
