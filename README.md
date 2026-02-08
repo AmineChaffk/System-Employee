@@ -29,5 +29,57 @@ This project is for **learning purposes**, focusing on CRUD operations, entity r
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
+
+---
+
+## 🧩 Entities
+
+### Employee
+- id
+- firstName
+- lastName
+- email
+- department
+
+### Department
+- id
+- name
+
+### LeaveRequest
+- id
+- startDate
+- endDate
+- status
+- employee
+
+### UserAccount
+- username
+- password (BCrypt encrypted)
+
+---
+
+## 🔐 Security
+
+- Spring Security configured using `SecurityFilterChain`
+- CSRF & CORS disabled (for development)
+- Passwords encrypted using `BCryptPasswordEncoder`
+- Authentication **not fully implemented** (educational project)
+
+---
+
+## ⚙️ Configuration
+
+### Database (application.properties)
+
+```properties
+spring.application.name=employee
+spring.datasource.url=jdbc:mariadb://localhost:3306/employee_System_db
+spring.datasource.username=root
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.password=1234
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.MariaDBDialect
+
+server.port=8080
