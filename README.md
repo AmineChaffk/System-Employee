@@ -1,59 +1,33 @@
-Employee Management System
+#  System Employee Management
 
-Employee Management System built with Spring Boot and Spring Data JPA.  
-This project is created for learning purposes, focusing on backend development, database relationships, and basic security concepts.
+A simple **Employee Management System** built with **Spring Boot**.  
+This project is for **learning purposes**, focusing on CRUD operations, entity relationships, and basic Spring Security configuration.
 
+---
 
-Features
+## Features
 
-- Authentication & Login (basic – learning purpose)
-- Employee CRUD operations
-- Department Management
-- Leave Management
-  - Request Leave
-  - Approve / Reject Leave
-- Role-based logic (ADMIN / EMPLOYEE – basic)
+- Employee management (Create, Update, Delete, List)
+- Department management
+- Leave request management
+- Entity relationships (Employee ↔ Department ↔ Leave)
+- DTO pattern (Create / Update)
+- Password encryption using BCrypt
+- Basic Spring Security configuration
+- RESTful API architecture
 
+---
 
-Technologies Used
+## Tech Stack
 
-- Java
-- Spring Boot
-- Spring Data JPA
-- MariaDB
-- Maven
-- Hibernate
+- **Java 17**
+- **Spring Boot**
+- **Spring Data JPA**
+- **Spring Security**
+- **MariaDB**
+- **Maven**
 
+---
 
+## 📂 Project Structure
 
-Database Design
-
-Entities
-- Employee
-- Department
-- Leave
-- login
-
-Relationships
-- Employee ➝ Department (ManyToOne)
-- Leave ➝ Employee (ManyToOne)
-- Department ➝ Employees (OneToMany)
-
-JPA annotations are used to manage relationships and persistence.
-
-
-Security
-
-Spring Security is implemented **for educational purposes only.
-
-- Basic authentication setup
-- No advanced authorization yet
-- No JWT or OAuth (planned for future improvement)
-
-How to Run the Project
-
-1. Create Database
-Create a MariaDB database
-password '1234'
-```sql
-CREATE DATABASE employee_system;
